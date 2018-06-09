@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl_current"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_start_here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="16dp"
+        android:text="Start Here"
+        android:textColor="@color/white_full"
+        android:textSize="24sp" />
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/rv_start_here"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignLeft="@id/tv_start_here"-->
+        <!--android:layout_below="@+id/tv_start_here"-->
+        <!--android:layout_marginRight="12dp"-->
+        <!--android:layout_marginTop="12dp" />-->
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_simple_habit_starter"
+        android:layout_below="@id/tv_start_here"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginTop="12dp"
+        android:layout_alignLeft="@id/tv_start_here"
+        android:layout_marginRight="12dp"
+        app:cardBackgroundColor="@color/primary_light"
+        app:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_add_habit_starter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/ic_add_white_24dp" />
+
+            <TextView
+                android:id="@+id/tv_simple_habit_starter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/rl_Day_one"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="12dp"
+                android:text="Simple Habit Starter"
+                android:textColor="@color/white_full"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_Day_one"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/rounded_components"
+                android:textAllCaps="false"
+                android:textColor="@color/white_full">
+
+                <TextView
+                    android:id="@+id/tv_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/ic_play_arrow_white_24dp"
+                    android:text="Day 1"
+                    android:textColor="@color/white_full"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_time_for_habit_starter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginRight="12dp"
+                android:text="5 mins"
+                android:textColor="@color/white_full"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>

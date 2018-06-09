@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Simple Habit</string>
+    <string name="action_settings">Settings</string>
+    <string name="detail_description">This is our signature 7 day introductory course</string>
+</resources>
